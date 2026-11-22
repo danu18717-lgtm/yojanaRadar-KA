@@ -1,0 +1,293 @@
+/* Members tab styles. Class names prefixed yr-members-. */
+
+.yr-members-page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  padding-bottom: 96px;
+  box-sizing: border-box;
+}
+
+.yr-members-title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 800;
+  color: #230833;
+}
+
+.yr-members-card {
+  background: #FFFFFF;
+  border: 1px solid #EBECEF;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.yr-members-household {
+  padding: 16px;
+}
+
+.yr-members-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.yr-members-card-title {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #230833;
+}
+
+.yr-members-text-btn {
+  background: none;
+  border: none;
+  padding: 8px 4px;
+  min-height: 44px;
+  color: #00A859;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.yr-members-kv-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.yr-members-kv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 0;
+  border-top: 1px solid #EBECEF;
+}
+
+.yr-members-kv:first-child {
+  border-top: none;
+}
+
+.yr-members-kv-label {
+  font-size: 13px;
+  color: #71717A;
+}
+
+.yr-members-kv-value {
+  font-size: 14px;
+  color: #230833;
+  text-align: right;
+}
+
+.yr-members-inline-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.yr-members-save-btn {
+  flex: 1;
+  min-height: 44px;
+}
+
+.yr-members-empty {
+  color: #71717A;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Accordion list */
+
+.yr-members-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.yr-members-item + .yr-members-item {
+  border-top: 1px solid #EBECEF;
+}
+
+.yr-members-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  min-height: 64px;
+  padding: 12px 16px;
+  background: #FFFFFF;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.yr-members-avatar {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.yr-members-row-text {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.yr-members-name {
+  font-weight: 700;
+  font-size: 15px;
+  color: #230833;
+}
+
+.yr-members-rel {
+  font-size: 13px;
+  color: #71717A;
+}
+
+.yr-members-chevron {
+  display: inline-flex;
+  transition: transform 200ms ease;
+  transform: rotate(0deg);
+}
+
+.yr-members-chevron-open {
+  transform: rotate(90deg);
+}
+
+.yr-members-panel {
+  padding: 4px 16px 16px;
+  background: #FFFFFF;
+  animation: yr-members-fade-in 200ms ease;
+}
+
+@keyframes yr-members-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.yr-members-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 16px;
+  margin: 0;
+}
+
+.yr-members-detail {
+  margin: 0;
+  min-width: 0;
+}
+
+.yr-members-detail-label {
+  font-size: 12px;
+  color: #71717A;
+}
+
+.yr-members-detail-value {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #230833;
+  overflow-wrap: anywhere;
+}
+
+.yr-members-pill {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: #E6F7EF;
+  color: #064E3B;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.yr-members-edit-btn {
+  display: block;
+  width: 100%;
+  height: 46px;
+  margin-top: 12px;
+  background: #230833;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Add button */
+
+.yr-members-add-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  height: 50px;
+  background: #230833;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Plus icon inherits white on the dark pill (SVG stroke is overridden by CSS). */
+.yr-members-add-btn svg {
+  stroke: #FFFFFF;
+}
+
+/* Bottom sheet */
+
+.yr-members-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(35, 8, 51, 0.45);
+  z-index: 59;
+}
+
+.yr-members-sheet {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 480px;
+  max-height: 88vh;
+  overflow: auto;
+  background: #FFFFFF;
+  border-radius: 20px 20px 0 0;
+  padding: 12px 16px 24px;
+  box-sizing: border-box;
+  z-index: 60;
+}
+
+.yr-members-grab {
+  width: 40px;
+  height: 4px;
+  border-radius: 999px;
+  background: #D4D4D8;
+  margin: 0 auto 12px;
+}
+
+.yr-members-sheet-title {
+  margin: 0 0 12px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #230833;
+}

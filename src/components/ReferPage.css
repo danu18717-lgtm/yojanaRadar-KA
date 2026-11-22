@@ -1,0 +1,210 @@
+/* Refer tab styles. Class names prefixed yr-refer-. */
+
+.yr-refer-page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  padding-bottom: 96px;
+  box-sizing: border-box;
+}
+
+.yr-refer-title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 800;
+  color: #230833;
+}
+
+.yr-refer-card {
+  background: #FFFFFF;
+  border: 1px solid #EBECEF;
+  border-radius: 16px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+/* Hero */
+.yr-refer-hero {
+  background: linear-gradient(#EFE6FA, #FFFFFF);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px 16px;
+}
+
+.yr-refer-hero-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.yr-refer-hero-title {
+  margin: 4px 0 0;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.25;
+  color: #230833;
+}
+
+.yr-refer-hero-sub {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #71717A;
+}
+
+/* Reward */
+.yr-refer-reward {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.yr-refer-reward-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+  color: #230833;
+}
+
+.yr-refer-progress {
+  height: 8px;
+  width: 100%;
+  background: #EBECEF;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.yr-refer-progress-fill {
+  height: 100%;
+  background: #00A859;
+  border-radius: 999px;
+  transition: width 0.3s ease;
+}
+
+.yr-refer-progress-caption {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: #00A859;
+}
+
+.yr-refer-code-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: #F6F7F9;
+  border: 1px solid #EBECEF;
+  border-radius: 12px;
+  padding: 10px 12px;
+}
+
+.yr-refer-code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #230833;
+  overflow-wrap: anywhere;
+}
+
+.yr-refer-copy-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  height: 36px;
+  padding: 0 12px;
+  border: 1px solid #230833;
+  border-radius: 999px;
+  background: #FFFFFF;
+  color: #230833;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Primary actions */
+.yr-refer-whatsapp,
+.yr-refer-outline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  height: 50px;
+  border-radius: 999px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.yr-refer-whatsapp {
+  background: #00A859;
+  border: none;
+  color: #FFFFFF;
+}
+
+.yr-refer-outline {
+  background: #FFFFFF;
+  border: 1px solid #230833;
+  color: #230833;
+}
+
+/* How it works */
+.yr-refer-how {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.yr-refer-how-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 800;
+  color: #230833;
+}
+
+.yr-refer-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.yr-refer-step {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.yr-refer-step-num {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #00A859;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.yr-refer-step-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: #230833;
+}

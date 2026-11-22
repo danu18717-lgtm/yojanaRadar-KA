@@ -1,0 +1,309 @@
+/* Home dashboard (yr-home-*). Colours follow the Navi theme: plum #230833, mint #00A859, border #EBECEF. */
+
+.yr-home {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+/* Hero */
+.yr-home-hero {
+  background: linear-gradient(#EFE6FA, #FFFFFF);
+  border-radius: 16px;
+  padding: 20px 16px;
+  text-align: center;
+}
+
+.yr-home-hero-caps {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #6B7280;
+}
+
+.yr-home-hero-title {
+  margin: 6px 0 4px;
+  font-size: 22px;
+  font-weight: 800;
+  color: #230833;
+}
+
+.yr-home-hero-sub {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #4B5563;
+}
+
+.yr-home-hero-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 44px;
+  margin-top: 14px;
+  padding: 10px 20px;
+  background: #FFFFFF;
+  color: #230833;
+  border: 1px solid #EBECEF;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.yr-home-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #00A859;
+  display: inline-block;
+}
+
+/* Add member pill */
+.yr-home-add {
+  width: 100%;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #230833;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.yr-home-add svg {
+  stroke: #FFFFFF;
+}
+
+/* Quick tiles */
+.yr-home-quick-row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.yr-home-quick {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: #1A1A1F;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Utility strip */
+.yr-home-utility {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  min-height: 44px;
+  background: #FFFFFF;
+  border: 1px solid #EBECEF;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.yr-home-util-text {
+  flex: 1;
+  min-width: 0;
+  padding: 0 12px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #1A1A1F;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.yr-home-util-sep {
+  width: 1px;
+  align-self: stretch;
+  margin: 8px 0;
+  background: #EBECEF;
+  flex-shrink: 0;
+}
+
+.yr-home-util-btn {
+  min-width: 44px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 0 10px;
+  background: transparent;
+  border: none;
+  color: #230833;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.yr-home-note {
+  margin-top: -8px;
+  font-size: 12px;
+  color: #6B7280;
+  padding-left: 4px;
+}
+
+/* Section titles and cards */
+.yr-home-section-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1A1A1F;
+}
+
+.yr-home-card {
+  background: #FFFFFF;
+  border: 1px solid #EBECEF;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
+.yr-home-muted {
+  font-size: 14px;
+  color: #6B7280;
+}
+
+/* Next for you */
+.yr-home-next {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+}
+
+.yr-home-next-text {
+  min-width: 0;
+}
+
+.yr-home-next-scheme {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1A1A1F;
+}
+
+.yr-home-next-member {
+  margin-top: 2px;
+  font-size: 13px;
+  color: #4B5563;
+}
+
+.yr-home-circle-btn {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  border-radius: 50%;
+  background: #230833;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.yr-home-circle-btn svg {
+  stroke: #FFFFFF;
+}
+
+/* Explore Services */
+.yr-home-list {
+  padding: 0;
+  overflow: hidden;
+}
+
+.yr-home-list-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 56px;
+  padding: 0 16px;
+  color: #1A1A1F;
+  text-decoration: none;
+  border-bottom: 1px solid #EBECEF;
+}
+
+.yr-home-list-row:last-child {
+  border-bottom: none;
+}
+
+.yr-home-list-icon {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.yr-home-list-label {
+  flex: 1;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.yr-home-list-chev {
+  display: flex;
+  color: #71717A;
+}
+
+.yr-home-badge {
+  background: #E6F7EF;
+  color: #0A7A43;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* Bottom-sheet MemberForm */
+.yr-home-sheet-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(35, 8, 51, 0.4);
+  z-index: 1000;
+}
+
+.yr-home-sheet {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 480px;
+  max-height: 88vh;
+  overflow: auto;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  border-radius: 20px 20px 0 0;
+  padding: 12px 16px 24px;
+  z-index: 1001;
+}
+
+.yr-home-sheet-grab {
+  width: 40px;
+  height: 4px;
+  border-radius: 999px;
+  background: #D4D4D8;
+  margin: 0 auto 12px;
+}
+
+.yr-home-sheet-title {
+  margin: 0 0 12px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1A1A1F;
+}
